@@ -1,0 +1,19 @@
+{
+  "recorded": "2026-10-19",
+  "note": "Reference run captured on the author's setup. Live numbers are not reproducible because pooled endpoints route each request to a possibly different upstream. Compare deltas and rank movement, not absolute values.",
+  "conditions": {
+    "runs": 5,
+    "max_tokens": 256,
+    "tokens": 200,
+    "rank_by": "combined",
+    "mode": "default (no reasoning parameter sent)",
+    "prompt": "Write a TypeScript function `chunk<T>(items: T[], size: number): T[][]` that splits an array into chunks. Then explain its time complexity in two sentences.",
+    "provider": "9router"
+  },
+  "results": [
+    { "rank": 1, "model": "oc/space-bunny-free", "ttft_ms": 1184, "tok_per_s": 121.2, "t200_ms": 2815, "total_ms": 3272 },
+    { "rank": 2, "model": "oc/deepseek-v4.1-flash-free", "ttft_ms": 1708, "tok_per_s": 164.6, "t200_ms": 3158, "total_ms": 3213 },
+    { "rank": 3, "model": "oc/glm-5.3-flash-free", "ttft_ms": 1126, "tok_per_s": 152.9, "t200_ms": 3229, "total_ms": 3817 },
+    { "rank": 4, "model": "oc/longcat-2.5-preview-free", "ttft_ms": 2264, "tok_per_s": 39.5, "t200_ms": 7590, "total_ms": 7336 }
+  ]
+}
